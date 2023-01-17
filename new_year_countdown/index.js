@@ -1,0 +1,1 @@
+docuent.getElementById("s");
