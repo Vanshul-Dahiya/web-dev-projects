@@ -6,3 +6,78 @@ body {
   align-items: center;
   font-family: "Courier New", Courier, monospace;
 }
+
+.password-container {
+  background-color: aliceblue;
+  width: 500px;
+  padding: 20px;
+  border-radius: 10px;
+  box-shadow: 4px 5px 14px;
+  margin: 10px;
+}
+
+.input-container {
+  border: solid 3px blanchedalmond;
+  padding: 10px;
+  border-radius: 12px;
+  display: flex;
+  justify-content: space-between;
+}
+
+#input {
+  border: none;
+  background-color: transparent;
+  outline: none;
+  font-size: 24px;
+  letter-spacing: 5px;
+}
+
+#input::placeholder {
+  letter-spacing: 0px;
+}
+
+.fa-copy {
+  cursor: pointer;
+  opacity: 0.2;
+}
+.fa-copy:hover {
+  opacity: 0.8;
+}
+
+.btn {
+  background-color: black;
+  color: wheat;
+  border: none;
+  padding: 10px 20px;
+  border-radius: 5px;
+  margin: 10px 0;
+  font-size: 20px;
+  cursor: pointer;
+}
+
+.btn:hover {
+  background-color: purple;
+}
+.btn:active {
+  transform: scale(0.75);
+}
+
+.alert-container {
+  position: fixed;
+  width: 300px;
+  height: 70px;
+  background-color: lightcoral;
+  right: 30px;
+  bottom: 30px;
+  border-radius: 12px;
+  box-shadow: 2px 4px 6px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  font-size: 20px;
+  transition: 0.5s;
+}
+
+.active.alert-container {
+  right: -300px;
+}
