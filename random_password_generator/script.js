@@ -14,7 +14,7 @@ copyIconEl.addEventListener("click", () => {
     alertContainerEl.classList.remove("active");
     setTimeout(() => {
       alertContainerEl.classList.add("active");
-    }, 1500);
+    }, 2500);
   }
 });
 
@@ -26,10 +26,10 @@ function createPassword() {
   let password = "";
   for (let index = 0; index < passwordLen; index++) {
     const randomNum = Math.floor(Math.random() * chars.length);
-    password += chars.substring(randomNum, randomNum + 1);[]
+    password += chars.substring(randomNum, randomNum + 1);
+    [];
   }
   inputEl.value = password;
-  alertContainerEl.innerText = password + " copied!!";
 }
 
 function copyPassword() {
@@ -38,4 +38,6 @@ function copyPassword() {
   inputEl.setSelectionRange(0, 9999);
   //   copy text
   navigator.clipboard.writeText(inputEl.value);
+
+  alertContainerEl.innerText = inputEl.value + " copied!!";
 }
