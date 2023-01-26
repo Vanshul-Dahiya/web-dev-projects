@@ -11,10 +11,9 @@ updateText();
 function updateText() {
   characterInd++;
 
-  containerEl.innerHTML = `<h1> I AM A  ${careers[careerIndex].slice(
-    0,
-    characterInd
-  )} </>`;
+  containerEl.innerHTML = `<h1> I AM ${
+    careers[careerIndex].slice(0, 1) === "A" ? "AN" : "A"
+  }  ${careers[careerIndex].slice(0, characterInd)} </>`;
 
   if (characterInd == careers[careerIndex].length) {
     careerIndex++;
