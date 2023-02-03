@@ -54,3 +54,6 @@ body {
 #score{
     text-align: right;
 }
+#timer{
+  text-align: left;
+}
