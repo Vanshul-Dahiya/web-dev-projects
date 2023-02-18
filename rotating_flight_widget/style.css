@@ -51,3 +51,19 @@ header {
 #flight {
   width: 200px;
 }
+
+.flip{
+  animation: 0.5s linear flipping;
+}
+
+@keyframes flipping{
+  0%{
+    transform: rotateX(0deg);
+  }
+  50%{
+    transform: rotateX(90deg);
+  }
+  100%{
+    transform: rotate(0deg);
+  }
+}
